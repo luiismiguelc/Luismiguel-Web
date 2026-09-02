@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+.card-custom {
+  background-color: $color-blanco;
+  border-radius: $radio-borde;
+  padding: 1.5rem;
+}

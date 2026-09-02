@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+.btn-custom {
+  background-color: $color-primario;
+  color: $color-blanco;
+  border-radius: $radio-borde;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  transition: $transicion-suave;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
