@@ -1,6 +1,14 @@
 @use "../utilities/variables" as *;
 
-header {
-  background-color: $color-blanco;
-  padding: 1rem 0;
+// Hero section con el título principal de UX | UI
+.hero-section {
+  padding: 4rem 0;
+  text-align: left;
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
 }

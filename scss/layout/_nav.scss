@@ -1,5 +1,24 @@
 @use "../utilities/variables" as *;
 
-.navbar {
-  background-color: $color-blanco;
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  .logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .nav-link-custom {
+    color: $color-oscuro;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: $transicion-suave;
+
+    &:hover {
+      color: $color-primario;
+    }
+  }
 }

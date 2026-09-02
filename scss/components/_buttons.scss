@@ -1,14 +1,14 @@
 @use "../utilities/variables" as *;
 
-.btn-custom {
+.btn-primary {
   background-color: $color-primario;
-  color: $color-blanco;
-  border-radius: $radio-borde;
-  padding: 0.5rem 1.2rem;
-  border: none;
+  border-color: $color-primario;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
   transition: $transicion-suave;
 
   &:hover {
-    opacity: 0.9;
+    background-color: darken(#0d6efd, 10%);
   }
 }

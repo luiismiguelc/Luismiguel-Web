@@ -1,7 +1,14 @@
 @use "../utilities/variables" as *;
 
-.card-custom {
-  background-color: $color-blanco;
-  border-radius: $radio-borde;
-  padding: 1.5rem;
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: $transicion-suave;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
 }
