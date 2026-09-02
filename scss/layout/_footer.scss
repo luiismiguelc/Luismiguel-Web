@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 footer {
   border-top: 1px solid $color-border;
@@ -7,17 +8,14 @@ footer {
 }
 
 .rs {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 16px !important;
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  @include flex-centrado;
+  gap: 16px !important;
 
   li {
-    display: inline-flex !important;
-    align-items: center !important;
+    @include flex-centrado;
   }
 }
 

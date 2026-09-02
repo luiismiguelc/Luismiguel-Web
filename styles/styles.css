@@ -120,17 +120,18 @@ footer {
 }
 
 .rs {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 16px !important;
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px !important;
 }
 .rs li {
-  display: inline-flex !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rrss {
