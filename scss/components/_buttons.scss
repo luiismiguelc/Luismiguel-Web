@@ -1,14 +1,37 @@
 @use "../utilities/variables" as *;
 
-.btn-primary {
-  background-color: $color-primario;
-  border-color: $color-primario;
-  border-radius: 8px;
-  padding: 0.6rem 1.5rem;
-  font-weight: 500;
-  transition: $transicion-suave;
+.btn-custom {
+  background-color: $color-primary;
+  color: #ffffff;
+  padding: 10px 26px;
+  border: 1px solid $color-primary;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: $transition-default;
 
   &:hover {
-    background-color: darken(#0d6efd, 10%);
+    background-color: $color-primary-hover;
+    color: #ffffff;
+    border-color: $color-primary-hover;
+  }
+}
+
+.btn-outline-custom {
+  background-color: $color-card-bg;
+  color: $color-primary;
+  padding: 10px 26px;
+  border: 1px solid $color-border-input;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: $transition-default;
+
+  &:hover {
+    background-color: $color-primary;
+    color: #ffffff;
+    border-color: $color-primary;
   }
 }

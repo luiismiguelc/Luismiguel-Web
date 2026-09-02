@@ -1,15 +1,45 @@
 @use "../utilities/variables" as *;
 
 footer {
-  background-color: $color-oscuro;
-  color: $color-blanco;
-  padding: 3rem 0;
-  margin-top: 4rem;
+  border-top: 1px solid $color-border;
+  background-color: $color-card-bg;
+  width: 100%;
+}
 
-  a {
-    color: rgba(255, 255, 255, 0.7);
-    &:hover {
-      color: $color-blanco;
-    }
+.rs {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 16px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  li {
+    display: inline-flex !important;
+    align-items: center !important;
   }
+}
+
+.rrss { 
+  height: 28px !important; 
+  width: 28px !important; 
+  max-width: 28px !important;
+  object-fit: contain !important;
+  filter: none !important;
+  transition: transform 0.2s ease; 
+
+  &:hover { 
+    transform: translateY(-2px);
+  }
+}
+
+.rrss-wp {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  height: 48px !important;
+  width: 48px !important;
+  max-width: 48px !important;
+  z-index: 999;
 }
