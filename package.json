@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-luismiguel-uxui",
+  "version": "1.0.0",
+  "description": "Portfolio profesional refactorizado con SCSS",
+  "main": "index.html",
+  "scripts": {
+    "build:scss": "sass scss/main.scss styles/styles.css",
+    "watch:scss": "sass --watch scss/main.scss styles/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

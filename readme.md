@@ -1,30 +1,23 @@
-# Portfolio UX/UI & Desarrollo Web - Luismiguel Calderón
+# Portfolio Personal - Refactorización SCSS
 
-🌐 **Sitio web desplegado:** [https://luiismiguelc.github.io/Luismiguel-Web/](https://luiismiguelc.github.io/Luismiguel-Web/)
+Este proyecto es el portafolio profesional de **Luismiguel | UX/UI**, refactorizado utilizando una arquitectura modular en **SCSS**.
 
----
+## Arquitectura SCSS
+El proyecto sigue el patrón de arquitectura modular dividida en partials organizados en la carpeta `scss/`:
 
-Este proyecto es el sitio web personal y portafolio profesional desarrollado durante el curso. Presenta una estructura moderna, responsiva e interactiva utilizando **HTML5**, **CSS3** y **Bootstrap 5**.
+- **`utilities/`**: Archivos globales como `_variables.scss` y `_mixins.scss`.
+- **`base/`**: Estilos base, reseteo CSS y reglas de tipografía (`_base.scss`, `_tipografia.scss`).
+- **`layout/`**: Estilos de estructura como cabecera, navegación y pie de página (`_header.scss`, `_nav.scss`, `_footer.scss`).
+- **`components/`**: Componentes reusables como botones y tarjetas (`_buttons.scss`, `_cards.scss`).
+- **`main.scss`**: Orquestador principal que importa todos los parciales mediante la regla `@use`.
 
-## 🚀 Páginas del Proyecto
+## Instrucciones de Compilación
 
-1. **Inicio (`index.html`)**: Presentación principal y llamado a la acción.
-2. **Servicios (`pages/servicios.html`)**: Detalle de servicios estructurados mediante un componente interactivo de tipo Acordeón.
-3. **Sobre mí (`pages/sobre-mi.html`)**: Información personal, perfil profesional, experiencia y habilidades.
-4. **Proyectos (`pages/proyectos.html`)**: Muestra de trabajos destacados presentados en tarjetas y enlazados a prototipos de Figma.
-5. **Contacto (`pages/contacto.html`)**: Formulario de contacto y canales de comunicación directa.
+### Requisitos
+- Node.js instalado en el sistema.
 
----
+### Compilar SCSS a CSS
+Para compilar manualmente el archivo principal de SCSS a CSS ejecute:
 
-## 🛠️ Tecnologías Utilizadas
-
-- **HTML5**: Estructura semántica.
-- **CSS3**: Estilos personalizados.
-- **Bootstrap 5.3**: Layout responsivo, componentes y utilidades.
-- **Git / GitHub**: Control de versiones y despliegue en GitHub Pages.
-
----
-
-## 🧑‍💻 Autor
-
-Desarrollado por **Luismiguel Calderón Hernández**.
+```bash
+npx sass scss/main.scss styles/styles.css
