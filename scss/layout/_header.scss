@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .hero-img-container {
   background-color: $color-card-bg;
@@ -9,6 +10,11 @@
   display: inline-block;
   width: 100%;
   max-width: 380px;
+  @include smooth-transition(transform, 0.3s);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   img#profileDynamicImg {
     border-radius: 16px;
@@ -18,5 +24,9 @@
     max-height: 300px !important;
     object-fit: contain !important;
     transition: opacity 0.2s ease;
+  }
+
+  @include respond-to(mobile) {
+    max-width: 100%;
   }
 }

@@ -16,6 +16,21 @@ body {
 main {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 16px;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeInSlide 0.8s ease-out forwards;
 }
 
 h1, h2, h3, .card-title, .parrafo-diferente {
@@ -28,9 +43,19 @@ h1, h2, h3, .card-title, .parrafo-diferente {
 h1 {
   font-size: 2.5rem;
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.85rem;
+  }
+}
 
 h2 {
   font-size: 1.75rem;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.4rem;
+  }
 }
 
 h3 {
@@ -60,6 +85,10 @@ p, .card-text {
   display: inline-block;
   width: 100%;
   max-width: 380px;
+  transition: transform 0.3s ease-in-out;
+}
+.hero-img-container:hover {
+  transform: translateY(-5px);
 }
 .hero-img-container img#profileDynamicImg {
   border-radius: 16px;
@@ -70,6 +99,11 @@ p, .card-text {
   object-fit: contain !important;
   transition: opacity 0.2s ease;
 }
+@media (max-width: 767px) {
+  .hero-img-container {
+    max-width: 100%;
+  }
+}
 
 .custom-navbar {
   background-color: rgba(255, 255, 255, 0.95) !important;
@@ -79,9 +113,11 @@ p, .card-text {
 }
 
 .navbar-brand {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
 }
 .navbar-brand img.logo {
   width: 60px !important;
@@ -105,7 +141,7 @@ p, .card-text {
   font-weight: 500;
   white-space: nowrap;
   display: inline-block;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .nav-link-custom:hover, .nav-link-custom.active {
   background-color: #0f172a;
@@ -117,6 +153,7 @@ footer {
   border-top: 1px solid #e2e8f0;
   background-color: #ffffff;
   width: 100%;
+  padding: 20px 0;
 }
 
 .rs {
@@ -124,9 +161,19 @@ footer {
   padding: 0 !important;
   margin: 0 !important;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 16px !important;
+  gap: 16px;
+}
+@media (max-width: 767px) {
+  .rs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
 }
 .rs li {
   display: flex;
@@ -140,10 +187,10 @@ footer {
   max-width: 28px !important;
   object-fit: contain !important;
   filter: none !important;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease-in-out;
 }
 .rrss:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .rrss-wp {
@@ -154,40 +201,52 @@ footer {
   width: 48px !important;
   max-width: 48px !important;
   z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+.rrss-wp:hover {
+  transform: scale(1.15);
+}
+
+.btn-outline-custom, .btn-custom {
+  padding: 10px 26px;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .btn-outline-custom, .btn-custom {
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+  }
 }
 
 .btn-custom {
   background-color: #0f172a;
   color: #ffffff;
-  padding: 10px 26px;
   border: 1px solid #0f172a;
-  border-radius: 9999px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
 }
 .btn-custom:hover {
   background-color: #334155;
   color: #ffffff;
   border-color: #334155;
+  transform: translateY(-2px);
 }
 
 .btn-outline-custom {
   background-color: #ffffff;
   color: #0f172a;
-  padding: 10px 26px;
   border: 1px solid #cbd5e1;
-  border-radius: 9999px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
 }
 .btn-outline-custom:hover {
   background-color: #0f172a;
   color: #ffffff;
   border-color: #0f172a;
+  transform: translateY(-2px);
 }
 
 .custom-card {
@@ -196,14 +255,19 @@ footer {
   border-radius: 20px !important;
   padding: 16px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .custom-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.1);
 }
 .custom-card:hover .custom-card-img img {
-  transform: scale(1.03);
+  transform: scale(1.04);
+}
+@media (max-width: 767px) {
+  .custom-card {
+    margin-bottom: 16px;
+  }
 }
 
 .custom-card-img {
@@ -221,7 +285,7 @@ footer {
   max-width: 100%;
   max-height: 250px;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-body {

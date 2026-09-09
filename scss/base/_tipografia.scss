@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 h1, h2, h3, .card-title, .parrafo-diferente {
   font-family: $font-heading;
@@ -7,8 +8,20 @@ h1, h2, h3, .card-title, .parrafo-diferente {
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: 2.5rem; }   
-h2 { font-size: 1.75rem; }
+h1 { 
+  font-size: 2.5rem; 
+  @include respond-to(mobile) {
+    font-size: 1.85rem;
+  }
+}   
+
+h2 { 
+  font-size: 1.75rem; 
+  @include respond-to(mobile) {
+    font-size: 1.4rem;
+  }
+}
+
 h3 { font-size: 1.25rem; }
 
 p, .card-text {

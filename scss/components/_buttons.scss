@@ -1,37 +1,48 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
-.btn-custom {
-  background-color: $color-primary;
-  color: #ffffff;
+// Uso de Placeholder %btn-base para aplicar @extend
+%btn-base {
   padding: 10px 26px;
-  border: 1px solid $color-primary;
   border-radius: 9999px;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  transition: $transition-default;
+  text-align: center;
+  cursor: pointer;
+  @include smooth-transition(all, 0.3s);
+
+  @include respond-to(mobile) {
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.btn-custom {
+  @extend %btn-base;
+  background-color: $color-primary;
+  color: #ffffff;
+  border: 1px solid $color-primary;
 
   &:hover {
     background-color: $color-primary-hover;
     color: #ffffff;
     border-color: $color-primary-hover;
+    transform: translateY(-2px);
   }
 }
 
 .btn-outline-custom {
+  @extend %btn-base;
   background-color: $color-card-bg;
   color: $color-primary;
-  padding: 10px 26px;
   border: 1px solid $color-border-input;
-  border-radius: 9999px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: $transition-default;
 
   &:hover {
     background-color: $color-primary;
     color: #ffffff;
     border-color: $color-primary;
+    transform: translateY(-2px);
   }
 }

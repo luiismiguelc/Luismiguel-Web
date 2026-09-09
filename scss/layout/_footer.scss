@@ -5,14 +5,18 @@ footer {
   border-top: 1px solid $color-border;
   background-color: $color-card-bg;
   width: 100%;
+  padding: 20px 0;
 }
 
 .rs {
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  @include flex-centrado;
-  gap: 16px !important;
+  @include flex-layout(row, center, center, 16px);
+
+  @include respond-to(mobile) {
+    @include flex-layout(column, center, center, 12px);
+  }
 
   li {
     @include flex-centrado;
@@ -25,10 +29,10 @@ footer {
   max-width: 28px !important;
   object-fit: contain !important;
   filter: none !important;
-  transition: transform 0.2s ease; 
+  @include smooth-transition(transform, 0.2s); 
 
   &:hover { 
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.1);
   }
 }
 
@@ -40,4 +44,9 @@ footer {
   width: 48px !important;
   max-width: 48px !important;
   z-index: 999;
+  @include smooth-transition(transform, 0.3s);
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
