@@ -6,72 +6,76 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Portafolio de Luismiguel Calderón, Diseñador UX/UI y Desarrollador Frontend especializado en investigación de usuarios, prototipado interactivo en Figma y diseño de interfaces.">
+    <meta name="keywords" content="Diseñador UX UI, UX Research, Figma, Prototipado, Design Systems, Desarrollo Web, Interfaces Digitales, Luismiguel Calderon">
+    <meta name="author" content="Luismiguel Calderón">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Luismiguel | UX/UI</title>
+    <title>Luismiguel Calderón | Diseñador UX/UI & Desarrollador Frontend</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top custom-navbar py-2">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="./index.html">
-                <img class="logo" src="./assets/proyectos/logo.png" alt="Logo UX/UI">
-                <span class="parrafo-diferente d-none d-sm-inline">Luismiguel | UX/UI</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarContent">
-                <ul class="navbar-nav gap-2 align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link-custom" href="./pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link-custom" href="./pages/sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link-custom" href="./pages/proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link-custom" href="./pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top custom-navbar py-2">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img class="logo" src="./assets/proyectos/logo.png" alt="Logotipo personal de Luismiguel Calderón Diseñador UX/UI">
+                    <span class="parrafo-diferente d-none d-sm-inline">Luismiguel | UX/UI</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarContent">
+                    <ul class="navbar-nav gap-2 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link-custom" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-custom" href="./pages/sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-custom" href="./pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-custom" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main class="container py-5">
         <section class="row align-items-center mb-5 gy-4">
             <div class="col-12 col-lg-7">
-                <!-- Animación CSS nativa aplicada al título -->
-                <h1 class="display-5 mb-3 animate-fade-in">Hola, soy Luismiguel Calderón.<br>Diseñador UX/UI</h1>
-                <p class="lead mb-4">Creo que las mejores experiencias digitales nacen de comprender a las personas, cuestionar la evidencia y diseñar con intención visual y estratégica.</p>
+                <h1 class="display-5 mb-3 animate-fade-in">Diseñador UX/UI & Desarrollador Web | Luismiguel Calderón</h1>
+                <p class="lead mb-4 text-muted">Creo que las mejores experiencias digitales nacen de comprender a las personas, cuestionar la evidencia y diseñar con intención visual y estratégica.</p>
                 <div class="d-flex gap-3 flex-wrap">
-                    <a href="./pages/proyectos.html" class="btn-custom">Ver proyectos</a>
-                    <a href="./pages/contacto.html" class="btn-outline-custom">Contacto</a>
+                    <a href="./pages/proyectos.html" class="btn-custom" aria-label="Ver la galería de proyectos UX/UI">Ver proyectos</a>
+                    <a href="./pages/contacto.html" class="btn-outline-custom" aria-label="Ir al formulario de contacto">Contacto</a>
                 </div>
             </div>
             <div class="col-12 col-lg-5 text-center">
-                <!-- Atributo AOS en la tarjeta de la foto -->
                 <div class="hero-img-container" data-aos="zoom-in">
-                    <img id="profileDynamicImg" src="./assets/logos/contacto.jpg" alt="Foto principal">
+                    <img id="profileDynamicImg" src="./assets/logos/contacto.jpg" alt="Elemento visual del portafolio de Luismiguel Calderón" class="img-fluid rounded">
                 </div>
             </div>
         </section>
 
-        <!-- Atributo AOS en la sección Biografía -->
         <section class="mb-5 py-4 border-top" data-aos="fade-up">
-            <h2 class="mb-3">Biografía</h2>
+            <h2 class="h3 mb-3">Biografía profesional</h2>
             <div class="p-4 custom-card">
-                <p class="mb-0">Mi camino hacia el UX/UI comenzó tras graduarme de Administración de Empresas en la Universidad de Los Andes. Mi formación previa me enseñó a comprender las necesidades de las empresas, alinear objetivos y buscar soluciones desde una perspectiva estratégica. Al especializarme en UX/UI encontré la forma de conectar esa visión con el diseño centrado en las personas.</p>
+                <p class="mb-0">Mi camino hacia el diseño UX/UI comenzó tras graduarme de Administración de Empresas en la Universidad de Los Andes. Mi formación previa me enseñó a comprender las necesidades de las empresas, alinear objetivos y buscar soluciones desde una perspectiva estratégica. Al especializarme en UX/UI encontré la forma de conectar esa visión con el diseño centrado en las personas.</p>
             </div>
         </section>
 
-        <!-- Atributo AOS secuencial en la lista de Habilidades -->
         <section class="mb-5 py-4 border-top" data-aos="fade-up">
-            <h2 class="mb-4">Habilidades principales</h2>
+            <h2 class="h3 mb-4">Habilidades principales en diseño y desarrollo</h2>
             <ul class="custom-list">
                 <li data-aos="fade-up" data-aos-delay="100">Investigación de usuarios (UX Research) y pruebas de usabilidad</li>
                 <li data-aos="fade-up" data-aos-delay="200">Diseño de interfaces (UI) y prototipado interactivo en Figma</li>
@@ -80,34 +84,33 @@
             </ul>
         </section>
 
-        <!-- Atributo AOS en la sección Proyectos -->
         <section class="mb-5 py-4 border-top" data-aos="fade-up">
-            <h2 class="mb-2">Proyectos destacados</h2>
-            <p class="mb-4">Una selección de experiencias digitales donde la investigación se encuentra con el diseño.</p>
+            <h2 class="h3 mb-2">Proyectos destacados de UX/UI</h2>
+            <p class="mb-4 text-muted">Una selección de experiencias digitales donde la investigación se encuentra con el diseño visual.</p>
             
             <div class="row g-4">
                 <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card custom-card h-100">
-                        <div class="custom-card-img">
-                            <img src="./assets/proyectos/myvalentine.png" alt="Proyecto My Valentine">
+                    <article class="card custom-card h-100">
+                        <div class="custom-card-img p-3">
+                            <img src="./assets/proyectos/myvalentine.png" alt="Caso de estudio UX/UI para aplicación móvil de citas My Valentine" class="img-fluid mx-auto d-block">
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title">My Valentine</h3>
+                            <h3 class="h4 card-title">My Valentine</h3>
                             <p class="card-text">Diseño UX/UI para una aplicación de citas orientada a la comunidad LGBT, enfocada en crear conexiones seguras e intuitivas.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card custom-card h-100">
-                        <div class="custom-card-img">
-                            <img src="./assets/proyectos/ramon en la via.png" alt="Proyecto Ramon en la via">
+                    <article class="card custom-card h-100">
+                        <div class="custom-card-img p-3">
+                            <img src="./assets/proyectos/ramon en la via.png" alt="Prototipo de aplicación móvil Ramon en la vía para asistencia automotriz" class="img-fluid mx-auto d-block">
                         </div>
                         <div class="card-body text-center">
-                            <h3 class="card-title">Ramon en la vía</h3>
+                            <h3 class="h4 card-title">Ramon en la vía</h3>
                             <p class="card-text">Solución digital UX/UI para asistencia mecánica automotriz a domicilio con seguimiento en tiempo real.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -121,18 +124,18 @@
             </div>
             <ul class="rs mb-0">
                 <li>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                        <img class="rrss" src="./assets/logos/instagram.png" alt="Instagram">
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Perfil de Instagram de Luismiguel Calderón">
+                        <img class="rrss" src="./assets/logos/instagram.png" alt="Logotipo oficial de Instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                        <img class="rrss" src="./assets/logos/facebook.png" alt="Facebook">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Perfil de Facebook de Luismiguel Calderón">
+                        <img class="rrss" src="./assets/logos/facebook.png" alt="Logotipo oficial de Facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="https://api.whatsapp.com" target="_blank" aria-label="WhatsApp">
-                        <img class="rrss-wp" src="./assets/logos/whatsapp.png" alt="WhatsApp">
+                    <a href="https://api.whatsapp.com" target="_blank" aria-label="Chat directo de WhatsApp con Luismiguel Calderón">
+                        <img class="rrss-wp" src="./assets/logos/whatsapp.png" alt="Logotipo oficial de WhatsApp">
                     </a>
                 </li>
             </ul>
