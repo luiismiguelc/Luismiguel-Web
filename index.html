@@ -2,14 +2,13 @@
 <html lang="es">
 <head>
     <!-- AOS Library CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Luismiguel | UX/UI</title>
-
 </head>
 <body>
 
@@ -36,7 +35,7 @@
                         <a class="nav-link-custom" href="./pages/proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./pages/contacto.html">Contáctanos</a>
+                        <a class="nav-link-custom" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +45,8 @@
     <main class="container py-5">
         <section class="row align-items-center mb-5 gy-4">
             <div class="col-12 col-lg-7">
-                <h1 class="display-5 mb-3">Hola, soy Luismiguel Calderón.<br>Diseñador UX/UI</h1>
+                <!-- Animación CSS nativa aplicada al título -->
+                <h1 class="display-5 mb-3 animate-fade-in">Hola, soy Luismiguel Calderón.<br>Diseñador UX/UI</h1>
                 <p class="lead mb-4">Creo que las mejores experiencias digitales nacen de comprender a las personas, cuestionar la evidencia y diseñar con intención visual y estratégica.</p>
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="./pages/proyectos.html" class="btn-custom">Ver proyectos</a>
@@ -54,35 +54,39 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 text-center">
-                <div class="hero-img-container">
+                <!-- Atributo AOS en la tarjeta de la foto -->
+                <div class="hero-img-container" data-aos="zoom-in">
                     <img id="profileDynamicImg" src="./assets/logos/contacto.jpg" alt="Foto principal">
                 </div>
             </div>
         </section>
 
-        <section class="mb-5 py-4 border-top">
+        <!-- Atributo AOS en la sección Biografía -->
+        <section class="mb-5 py-4 border-top" data-aos="fade-up">
             <h2 class="mb-3">Biografía</h2>
             <div class="p-4 custom-card">
                 <p class="mb-0">Mi camino hacia el UX/UI comenzó tras graduarme de Administración de Empresas en la Universidad de Los Andes. Mi formación previa me enseñó a comprender las necesidades de las empresas, alinear objetivos y buscar soluciones desde una perspectiva estratégica. Al especializarme en UX/UI encontré la forma de conectar esa visión con el diseño centrado en las personas.</p>
             </div>
         </section>
 
-        <section class="mb-5 py-4 border-top">
+        <!-- Atributo AOS secuencial en la lista de Habilidades -->
+        <section class="mb-5 py-4 border-top" data-aos="fade-up">
             <h2 class="mb-4">Habilidades principales</h2>
             <ul class="custom-list">
-                <li>Investigación de usuarios (UX Research) y pruebas de usabilidad</li>
-                <li>Diseño de interfaces (UI) y prototipado interactivo en Figma</li>
-                <li>Arquitectura de la información y mapas de sitio</li>
-                <li>Estrategia de producto y diseño de sistemas (Design Systems)</li>
+                <li data-aos="fade-up" data-aos-delay="100">Investigación de usuarios (UX Research) y pruebas de usabilidad</li>
+                <li data-aos="fade-up" data-aos-delay="200">Diseño de interfaces (UI) y prototipado interactivo en Figma</li>
+                <li data-aos="fade-up" data-aos-delay="300">Arquitectura de la información y mapas de sitio</li>
+                <li data-aos="fade-up" data-aos-delay="400">Estrategia de producto y diseño de sistemas (Design Systems)</li>
             </ul>
         </section>
 
-        <section class="mb-5 py-4 border-top">
+        <!-- Atributo AOS en la sección Proyectos -->
+        <section class="mb-5 py-4 border-top" data-aos="fade-up">
             <h2 class="mb-2">Proyectos destacados</h2>
             <p class="mb-4">Una selección de experiencias digitales donde la investigación se encuentra con el diseño.</p>
             
             <div class="row g-4">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="card custom-card h-100">
                         <div class="custom-card-img">
                             <img src="./assets/proyectos/myvalentine.png" alt="Proyecto My Valentine">
@@ -94,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card custom-card h-100">
                         <div class="custom-card-img">
                             <img src="./assets/proyectos/ramon en la via.png" alt="Proyecto Ramon en la via">
@@ -172,15 +176,16 @@
         window.addEventListener('scroll', updateImageOnScroll);
         window.addEventListener('load', updateImageOnScroll);
     </script>
+    
     <!-- AOS Library JS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 80
-  });
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80
+      });
+    </script>
 
 </body>
 </html>

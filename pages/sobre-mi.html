@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <!-- AOS Library CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
                         <a class="nav-link-custom" href="./proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="./contacto.html">Contáctanos</a>
+                        <a class="nav-link-custom" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +45,8 @@
     <main class="container py-5">
         <section class="row align-items-center mb-5 gy-4">
             <div class="col-12 col-lg-7">
-                <h1 class="display-5 mb-3">Sobre mí</h1>
+                <!-- Animación CSS nativa en título -->
+                <h1 class="display-5 mb-3 animate-fade-in">Sobre mí</h1>
                 <p class="lead mb-4">Soy diseñador UX/UI apasionado por crear experiencias digitales funcionales, atractivas y centradas en resolver problemas reales.</p>
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="./contacto.html" class="btn-custom">Hablemos</a>
@@ -53,13 +54,15 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 text-center">
-                <div class="hero-img-container">
+                <!-- Animación AOS en imagen principal -->
+                <div class="hero-img-container" data-aos="zoom-in">
                     <img src="../assets/logos/contacto.jpg" alt="Foto de Luismiguel" class="img-fluid">
                 </div>
             </div>
         </section>
 
-        <section class="mb-5 py-4 border-top">
+        <!-- Sección de historia animada con AOS -->
+        <section class="mb-5 py-4 border-top" data-aos="fade-up">
             <h2 class="mb-3">Mi historia y enfoque</h2>
             <div class="p-4 custom-card mb-3">
                 <p class="mb-0">Mi recorrido comenzó en el área de Administración de Empresas en la Universidad de Los Andes, lo que me otorgó una base sólida para entender cómo funcionan los negocios, identificar oportunidades de mercado y traducir requerimientos comerciales en estrategias viables.</p>
@@ -69,22 +72,23 @@
             </div>
         </section>
 
-        <section class="mb-5 py-4 border-top">
+        <!-- Tarjetas de herramientas con retardo en AOS -->
+        <section class="mb-5 py-4 border-top" data-aos="fade-up">
             <h2 class="mb-4">Herramientas y metodologías</h2>
             <div class="row g-3">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="custom-card p-3 text-center h-100">
                         <h3 class="h5 mb-2">Diseño y Prototipado</h3>
                         <p class="mb-0 small">Figma, Adobe XD, Design Systems, Prototipado interactivo.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="custom-card p-3 text-center h-100">
                         <h3 class="h5 mb-2">Investigación</h3>
                         <p class="mb-0 small">Entrevistas, Pruebas de usabilidad, Mapas de empatía, User Personas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="custom-card p-3 text-center h-100">
                         <h3 class="h5 mb-2">Estrategia</h3>
                         <p class="mb-0 small">Arquitectura de información, Wireframing, Benchmarking, UX Writing.</p>
@@ -124,15 +128,16 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
     <!-- AOS Library JS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 80
-  });
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80
+      });
+    </script>
 
 </body>
 </html>

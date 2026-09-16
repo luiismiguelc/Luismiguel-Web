@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <!-- AOS Library CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
                         <a class="nav-link-custom active" href="../pages/proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="../pages/contacto.html">Contáctanos</a>
+                        <a class="nav-link-custom" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,8 @@
     </nav>
 
     <main class="container py-4">
-        <section class="mb-4 text-center">
+        <!-- Encabezado con animación AOS -->
+        <section class="mb-4 text-center" data-aos="fade-up">
             <h1>Diseñador y Desarrollador Web</h1>
             <h2>Proyectos</h2>
             <p>Aquí puedes ver algunos de mis proyectos más destacados:</p>
@@ -51,7 +52,8 @@
 
         <section class="mb-5 py-2">
             <div class="row g-4 justify-content-center align-items-stretch">
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <!-- Proyecto 1: Ramon en la via -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="card custom-card h-100 mx-auto">
                         <a href="https://www.figma.com/design/91P4NCJzzgTESupl0dzsMt/Proto-alta?node-id=372-7293&t=dWlyAoqQsUfxq35F-1" target="_blank" class="d-flex justify-content-center align-items-center custom-card-img p-3">
                             <img src="../assets/proyectos/ramon en la via.png" alt="Proyecto Ramon en la via" class="img-fluid mx-auto d-block">
@@ -63,7 +65,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <!-- Proyecto 2: My Valentine -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="card custom-card h-100 mx-auto">
                         <a href="https://www.figma.com/proto/OvY6sgS7DSeNJ026l8Xror/Prototipo-Myvalentine?node-id=173-869&p=f&viewport=1895%2C-3234%2C0.15&t=jOdikHCzvW7Lfvhs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=135%3A855&show-proto-sidebar=1&page-id=0%3A1" target="_blank" class="d-flex justify-content-center align-items-center custom-card-img p-3">
                             <img src="../assets/proyectos/myvalentine.png" alt="Proyecto My Valentine" class="img-fluid mx-auto d-block">
@@ -75,7 +78,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <!-- Proyecto 3: Binance Web -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="card custom-card h-100 mx-auto">
                         <a href="https://www.figma.com/proto/0g6k1r5X8Z7J3Q9l2vW8R4/Binance-Web?node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="d-flex justify-content-center align-items-center custom-card-img p-3">
                             <img src="../assets/logos/binance web.png" alt="Proyecto Binance Web" class="img-fluid mx-auto d-block">
@@ -118,15 +122,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+    
     <!-- AOS Library JS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 80
-  });
-</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80
+      });
+    </script>
 
 </body>
 </html>

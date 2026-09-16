@@ -19,7 +19,7 @@
   transition: $property $duration $timing;
 }
 
-// Mixin con parámetros para Media Queries (Responsive)
+// (Responsive)
 @mixin respond-to($breakpoint) {
   @if $breakpoint == mobile {
     @media (max-width: 767px) { @content; }
