@@ -1,24 +1,21 @@
-# Mi Portfolio Personal - Coderhouse
+# Mi Portafolio Personal - Coderhouse
 
-¡Hola! Este repositorio contiene la versión final de mi portfolio personal como diseñador UX/UI. Para esta entrega refactoricé todo el proyecto migrando de CSS tradicional a una arquitectura modular con **SCSS**, haciéndolo mucho más fácil de mantener y escalar.
+¡Hola! Este repositorio contiene la versión final de mi portfolio personal como diseñador UX/UI, refactorizado de CSS tradicional a una arquitectura modular con SCSS para facilitar su mantenimiento y escalabilidad.
 
-## Arquitectura SCSS
+Sitio en vivo: https://luismiguel-web.vercel.app
 
-Dividí los estilos en módulos pequeños dentro de la carpeta `scss/` para tener todo ordenado según la responsabilidad de cada archivo:
+Tecnologías usadas:
+- HTML5 con marcado semántico
+- CSS3 y SCSS con partials, variables, mixins y la regla @use
+- Bootstrap 5
+- AOS (Animate On Scroll)
 
-- **`utilities/`**: Archivos globales como `_variables.scss` y `_mixins.scss`.
-- **`base/`**: Estilos base, reseteo CSS y reglas de tipografía (`_base.scss`, `_tipografia.scss`).
-- **`layout/`**: Estilos de estructura como cabecera, navegación y pie de página (`_header.scss`, `_nav.scss`, `_footer.scss`).
-- **`components/`**: Componentes reusables como botones y tarjetas (`_buttons.scss`, `_cards.scss`).
-- **`main.scss`**: Orquestador principal que importa todos los parciales mediante la regla `@use`.
+Estructura de estilos en la carpeta scss:
+- utilities: variables y mixins globales
+- base: reseteo y tipografía
+- layout: header, nav y footer
+- components: botones y tarjetas
+- main.scss: orquestador principal
 
-## Instrucciones de Compilación
-
-### Requisitos
-- Node.js instalado en el sistema.
-
-### Compilar SCSS a CSS
-Para compilar manualmente el archivo principal de SCSS a CSS ejecute:
-
-```bash
+Para compilar Sass localmente:
 npx sass scss/main.scss styles/styles.css
