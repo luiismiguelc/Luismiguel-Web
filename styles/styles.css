@@ -193,18 +193,27 @@ footer {
   transform: translateY(-3px) scale(1.1);
 }
 
-.rrss-wp {
+.btn-wsp-float {
   position: fixed;
   bottom: 25px;
   right: 20px;
   height: 48px !important;
   width: 48px !important;
-  max-width: 48px !important;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease-in-out;
 }
-.rrss-wp:hover {
+.btn-wsp-float:hover {
   transform: scale(1.15);
+}
+.btn-wsp-float img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  object-fit: contain !important;
 }
 
 .btn-outline-custom, .btn-custom {
@@ -319,5 +328,3 @@ section ul.custom-list li {
   font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
-
-/*# sourceMappingURL=styles.css.map */
