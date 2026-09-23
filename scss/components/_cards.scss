@@ -2,10 +2,10 @@
 @use "../utilities/mixins" as *;
 
 .custom-card {
-  background-color: $color-card-bg !important;
-  border: 1px solid $color-border !important;
-  border-radius: 20px !important;
-  padding: 16px !important;
+  background-color: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  padding: 16px;
   box-shadow: $shadow-card;
   @include smooth-transition(all, 0.3s);
 
@@ -20,6 +20,21 @@
 
   @include respond-to(mobile) {
     margin-bottom: 16px;
+  }
+
+  .card-body {
+    padding: 16px 8px 8px 8px;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    line-height: 1.5;
   }
 }
 
@@ -40,25 +55,10 @@
   }
 }
 
-.card-body {
-  padding: 16px 8px 8px 8px !important;
-}
-
-.card-title {
-  font-size: 1.35rem !important;
-  margin-bottom: 8px !important;
-}
-
-.card-text {
-  font-size: 0.9rem !important;
-  color: $color-text-muted !important;
-  line-height: 1.5 !important;
-}
-
 section ul.custom-list {
-  gap: 12px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   padding: 0;
   list-style: none;
 

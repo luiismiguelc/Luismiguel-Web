@@ -1,11 +1,9 @@
-// Mixin simple centrado
 @mixin flex-centrado {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Mixin con parámetros para Flexbox dinámico
 @mixin flex-layout($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
@@ -14,12 +12,10 @@
   gap: $gap;
 }
 
-// Mixin con parámetros para Transiciones
 @mixin smooth-transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
   transition: $property $duration $timing;
 }
 
-// (Responsive)
 @mixin respond-to($breakpoint) {
   @if $breakpoint == mobile {
     @media (max-width: 767px) { @content; }

@@ -1,7 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// Uso de Placeholder %btn-base para aplicar @extend
 %btn-base {
   padding: 10px 26px;
   border-radius: 9999px;
@@ -10,6 +9,7 @@
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  user-select: none;
   @include smooth-transition(all, 0.3s);
 
   @include respond-to(mobile) {

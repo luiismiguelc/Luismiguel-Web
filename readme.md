@@ -1,9 +1,10 @@
-# Portfolio Personal - Refactorización SCSS
+# Mi Portfolio Personal - Coderhouse
 
-Este proyecto es el portafolio profesional de **Luismiguel | UX/UI**, refactorizado utilizando una arquitectura modular en **SCSS**.
+¡Hola! Este repositorio contiene la versión final de mi portfolio personal como diseñador UX/UI. Para esta entrega refactoricé todo el proyecto migrando de CSS tradicional a una arquitectura modular con **SCSS**, haciéndolo mucho más fácil de mantener y escalar.
 
 ## Arquitectura SCSS
-El proyecto sigue el patrón de arquitectura modular dividida en partials organizados en la carpeta `scss/`:
+
+Dividí los estilos en módulos pequeños dentro de la carpeta `scss/` para tener todo ordenado según la responsabilidad de cada archivo:
 
 - **`utilities/`**: Archivos globales como `_variables.scss` y `_mixins.scss`.
 - **`base/`**: Estilos base, reseteo CSS y reglas de tipografía (`_base.scss`, `_tipografia.scss`).

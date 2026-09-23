@@ -1,9 +1,8 @@
 @use "../utilities/variables" as *;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +20,6 @@ main {
   padding: 0 16px;
 }
 
-// Keyframes locales para animaciones nativas
 @keyframes fadeInSlide {
   from {
     opacity: 0;
